@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 24 19:49:45 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>86 seconds (86569 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='crmVtigerLogin.Login_Test.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: crmVtigerLogin.Login_Test<br>Parameters:          ,          <br/>
+<a href="#Output-1582406355" onClick='toggleBox("Output-1582406355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1582406355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1582406355">
+Login Successful<br/>
+Username:          <br/>
+Password:          <br/>
+Error Message: You must specify a valid username and password.<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>crmVtigerLogin.Login_Test@36fc695d</td></tr>
+<tr>
+<td title='crmVtigerLogin.Login_Test.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: crmVtigerLogin.Login_Test<br>Parameters: Akshitha, <br/>
+<a href="#Output-296223788" onClick='toggleBox("Output-296223788", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-296223788" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-296223788">
+Login Successful<br/>
+Username: Akshitha<br/>
+Password: <br/>
+Error Message: You must specify a valid username and password.<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>crmVtigerLogin.Login_Test@36fc695d</td></tr>
+<tr>
+<td title='crmVtigerLogin.Login_Test.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: crmVtigerLogin.Login_Test<br>Parameters: Akhila, Akhila123<br/>
+<a href="#Output-532297836" onClick='toggleBox("Output-532297836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-532297836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-532297836">
+Login Successful<br/>
+Username: Akhila<br/>
+Password: Akhila123<br/>
+Error Message: You must specify a valid username and password.<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>crmVtigerLogin.Login_Test@36fc695d</td></tr>
+<tr>
+<td title='crmVtigerLogin.Login_Test.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: crmVtigerLogin.Login_Test<br>Parameters: , lkjhg<br/>
+<a href="#Output-1973491942" onClick='toggleBox("Output-1973491942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1973491942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1973491942">
+Login Successful<br/>
+Username: <br/>
+Password: lkjhg<br/>
+Error Message: You must specify a valid username and password.<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>crmVtigerLogin.Login_Test@36fc695d</td></tr>
+<tr>
+<td title='crmVtigerLogin.Login_Test.validLoginTest()'><b>validLoginTest</b><br>Test class: crmVtigerLogin.Login_Test<br/>
+<a href="#Output-836969741" onClick='toggleBox("Output-836969741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-836969741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-836969741">
+Login Successful<br/>
+Home Page Title: ACOE Fireflink - Home - vtiger CRM 5 - Commercial Open Source CRM<br/>
+Current URL: http://49.249.29.4:8888/index.php?action=index&module=Home<br/>
+Login successful<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>crmVtigerLogin.Login_Test@36fc695d</td></tr>
+</table><p>
+</body>
+</html>

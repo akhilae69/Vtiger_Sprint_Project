@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 24 20:34:19 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>316 seconds (316784 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='crmVtigerPurchaseOrder.PurchaseOrder_Test.verifyEditingOnePurchaseOrderDoesNotAffectAnother_Test()'><b>verifyEditingOnePurchaseOrderDoesNotAffectAnother_Test</b><br>Test class: crmVtigerPurchaseOrder.PurchaseOrder_Test<br>Parameters: Updated_System_test<br/>
+<a href="#Output-1647509467" onClick='toggleBox("Output-1647509467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1647509467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1647509467">
+Login Successful<br/>
+Purchase page is displayed<br/>
+Purchase Order subject updated: Updated_System_test<br/>
+Purchase Order Save button clicked.<br/>
+Updated name is displayed.<br/>
+Edited Order name: Updated_System_test<br/>
+Edited Orders: PO231 Updated_System_test RashiPeripherals_1544 $0.00 ACOE Fireflink edit | del<br/>
+Signout is successful<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>crmVtigerPurchaseOrder.PurchaseOrder_Test@28701274</td></tr>
+<tr>
+<td title='crmVtigerPurchaseOrder.PurchaseOrder_Test.verifyPurchaseOrderCreation_Test()'><b>verifyPurchaseOrderCreation_Test</b><br>Test class: crmVtigerPurchaseOrder.PurchaseOrder_Test<br>Parameters: System Test PO, Ballari, Beluru, 1<br/>
+<a href="#Output-1867108691" onClick='toggleBox("Output-1867108691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1867108691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1867108691">
+Login Successful<br/>
+Purchase page is displayed<br/>
+Purchase Order subject entered: System Test PO<br/>
+Billing Address entered: Ballari<br/>
+Shipping Address entered: Beluru<br/>
+Product quantity entered: 1<br/>
+Purchase Order Save button clicked.<br/>
+Purchase Order is created<br/>
+Signout is successful<br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>crmVtigerPurchaseOrder.PurchaseOrder_Test@28701274</td></tr>
+<tr>
+<td title='crmVtigerPurchaseOrder.PurchaseOrder_Test.verifyPurchaseOrderQtyBVA_Test()'><b>verifyPurchaseOrderQtyBVA_Test</b><br>Test class: crmVtigerPurchaseOrder.PurchaseOrder_Test<br>Parameters: BVA_Quantity_Neg, 28CoffeeDay, Bangalore, Badami, laptop, -1, Reject<br/>
+<a href="#Output-1723810021" onClick='toggleBox("Output-1723810021", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1723810021" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1723810021">
+Login Successful<br/>
+Purchase page is displayed<br/>
+Purchase Order subject entered: BVA_Quantity_Neg<br/>
+Billing Address entered: Bangalore<br/>
+Shipping Address entered: Badami<br/>
+Product quantity entered: -1<br/>
+Save clicked for BVA validation.<br/>
+Validation alert: Invalid Qty<br/>
+PASS: Invalid quantity rejected. Alert: Invalid Qty<br/>
+Signout is successful<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>crmVtigerPurchaseOrder.PurchaseOrder_Test@28701274</td></tr>
+<tr>
+<td title='crmVtigerPurchaseOrder.PurchaseOrder_Test.verifyPurchaseOrderQtyBVA_Test()'><b>verifyPurchaseOrderQtyBVA_Test</b><br>Test class: crmVtigerPurchaseOrder.PurchaseOrder_Test<br>Parameters: BVA_Quantity_Min, 28CoffeeDay, Banashankari, Belagavi, laptop, 1, Accept<br/>
+<a href="#Output-181451598" onClick='toggleBox("Output-181451598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-181451598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-181451598">
+Login Successful<br/>
+Purchase page is displayed<br/>
+Purchase Order subject entered: BVA_Quantity_Min<br/>
+Billing Address entered: Banashankari<br/>
+Shipping Address entered: Belagavi<br/>
+Product quantity entered: 1<br/>
+Save clicked for BVA validation.<br/>
+Purchase Order is created<br/>
+Signout is successful<br/>
+</div>
+</td>
+<td></td>
+<td>59</td>
+<td>crmVtigerPurchaseOrder.PurchaseOrder_Test@28701274</td></tr>
+<tr>
+<td title='crmVtigerPurchaseOrder.PurchaseOrder_Test.verifyPurchaseOrderQtyBVA_Test()'><b>verifyPurchaseOrderQtyBVA_Test</b><br>Test class: crmVtigerPurchaseOrder.PurchaseOrder_Test<br>Parameters: BVA_Quantity_Zero, 28CoffeeDay, Ballari, Beluru, laptop, 0, Reject<br/>
+<a href="#Output-1958375413" onClick='toggleBox("Output-1958375413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958375413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958375413">
+Login Successful<br/>
+Purchase page is displayed<br/>
+Purchase Order subject entered: BVA_Quantity_Zero<br/>
+Billing Address entered: Ballari<br/>
+Shipping Address entered: Beluru<br/>
+Product quantity entered: 0<br/>
+Save clicked for BVA validation.<br/>
+Validation alert: Qty should be greater than 0<br/>
+PASS: Invalid quantity rejected. Alert: Qty should be greater than 0<br/>
+Signout is successful<br/>
+</div>
+</td>
+<td></td>
+<td>59</td>
+<td>crmVtigerPurchaseOrder.PurchaseOrder_Test@28701274</td></tr>
+</table><p>
+</body>
+</html>

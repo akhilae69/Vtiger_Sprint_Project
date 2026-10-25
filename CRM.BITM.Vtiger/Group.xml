@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="GroupsSuite">
+
+    <test name="Group Testing">
+
+        <groups>
+            <run>
+                <include name="SMK"/>
+                <include name="FUN"/>
+                <include name="INT"/>
+                <include name="SYS"/>
+                <include name="REG"/>
+                <include name="NEG"/>
+                
+            </run>
+        </groups>
+
+        <classes>
+      		<class name="crmVtigerPriceBooks.PriceBooks_Test"/>
+      		<class name="crmVtigerAssest.Assest_Test"/>
+      		<class name="crmVtigerService.Service_Test"/>
+      		<class name="crmVtigerHome.Home_Test"/>
+      		<class name="crmVitgerVendors.Vendor_Test"/>
+      		<class name="crmVtigerPurchaseOrder.PurchaseOrder_Test"/>
+      		<class name="crmVtigerLogin.Login_Test"/>
+    		</classes>
+
+    </test>
+
+</suite>
